@@ -1,0 +1,26 @@
+{
+  "name": "node-writing",
+  "version": "1.0.0",
+  "description": "----------------",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehrabtpc/node-writing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehrabtpc/node-writing/issues"
+  },
+  "homepage": "https://github.com/mehrabtpc/node-writing#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0"
+  }
+}
