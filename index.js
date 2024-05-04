@@ -5,7 +5,7 @@ const questionRoute = require("./routes/questions.route.js");
 const app = express();
 
 
-app.use("/api/question", questionRoute);
+app.use("/api/questions", questionRoute);
 
 
 app.get("/", (req, res) => {
@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://mehrabtpc:<password>@node-writing.35qhp2b.mongodb.net/?retryWrites=true&w=majority&appName=node-writing"
+    "mongodb+srv://mehrabtpc:LWCrL3GZZAbymmzU@node-writing.35qhp2b.mongodb.net/?retryWrites=true&w=majority&appName=node-writing"
   )
   .then(() => {
     console.log("Connected to database!");
