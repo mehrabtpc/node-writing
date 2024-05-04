@@ -10,7 +10,7 @@ const QuestionSchema = mongoose.Schema(
     },
 
     description: {
-      type: Text,
+      type: String,
       required: [true, "Please enter description"],
     },
 
