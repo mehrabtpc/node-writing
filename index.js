@@ -4,6 +4,10 @@ const Question = require("./models/Question.model.js");
 const questionRoute = require("./routes/questions.route.js");
 const app = express();
 
+// middleware
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
 
 app.use("/api/questions", questionRoute);
 
