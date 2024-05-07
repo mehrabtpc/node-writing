@@ -1,4 +1,4 @@
-route:
+routes:
 login
 logout
 ---------
