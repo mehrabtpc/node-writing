@@ -18,15 +18,15 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://mehrabtpc:LWCrL3GZZAbymmzU@node-writing.35qhp2b.mongodb.net/?retryWrites=true&w=majority&appName=node-writing"
-  )
-  .then(() => {
-    console.log("Connected to database!");
-    app.listen(3000, () => {
-      console.log("Server is running on port 3000");
+      "mongodb+srv://mehrabtpc:LWCrL3GZZAbymmzU@node-writing.35qhp2b.mongodb.net/?retryWrites=true&w=majority&appName=node-writing"
+    )
+    .then(() => {
+      console.log("Connected to database!");
+      app.listen(3000, () => {
+        console.log("Server is running on port 3000");
+      });
+    })
+    .catch(() => {
+      console.log("Connection failed!");
     });
-  })
-  .catch(() => {
-    console.log("Connection failed!");
-  });
-  
+    
