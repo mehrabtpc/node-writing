@@ -6,7 +6,6 @@ const questionRoute = require("./routes/questions.route.js");
 const app = express();
 const port = process.env.PORT|| 3000;
 const mongo_uri = process.env.MONGO_URI;
-console.log(process.env.PORT)
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
