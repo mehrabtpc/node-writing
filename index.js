@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 require('dotenv').config();
 const Question = require("./models/Question.model.js");
 const questionRoute = require("./routes/questions.route.js");
+const answerRoute = require("./routes/answers.route.js");
+
 const app = express();
 const port = process.env.PORT|| 3000;
 const mongo_uri = process.env.MONGO_URI;
@@ -12,6 +14,7 @@ app.use(express.urlencoded({extended: false}));
 
 
 app.use("/api/questions", questionRoute);
+app.use("/api/answers", answerRoute);
 
 
 app.get("/", (req, res) => {
